@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Union
-
 from .._base import ASTNode
 
 __all__ = [
@@ -71,7 +69,7 @@ class Invert(ASTNode):
 
 
 class UnaryOp(ASTNode):
-    op: Union[UAdd, USub, Not, Invert]
+    op: UAdd | USub | Not | Invert
     operand: ASTNode
 
 
@@ -132,21 +130,21 @@ class MatMult(ASTNode):
 
 class BinOp(ASTNode):
     left: ASTNode
-    op: Union[
-        Add,
-        Sub,
-        Mult,
-        Div,
-        FloorDiv,
-        Mod,
-        Pow,
-        LShift,
-        RShift,
-        BitOr,
-        BitXor,
-        BitAnd,
-        MatMult,
-    ]
+    op: (
+        Add
+        | Sub
+        | Mult
+        | Div
+        | FloorDiv
+        | Mod
+        | Pow
+        | LShift
+        | RShift
+        | BitOr
+        | BitXor
+        | BitAnd
+        | MatMult
+    )
     right: ASTNode
 
 
@@ -159,7 +157,7 @@ class Or(ASTNode):
 
 
 class BoolOp(ASTNode):
-    op: Union[And, Or]
+    op: And | Or
     values: list[ASTNode]
 
 
@@ -205,7 +203,7 @@ class NotIn(ASTNode):
 
 class Compare(ASTNode):
     left: ASTNode
-    ops: list[Union[Eq, NotEq, Lt, LtE, Gt, GtE, Is, IsNot, In, NotIn]]
+    ops: list[Eq | NotEq | Lt | LtE | Gt | GtE | Is | IsNot | In | NotIn]
     comparators: list[ASTNode]
 
 

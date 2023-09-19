@@ -2,7 +2,7 @@
 
 Pydantic models covering Python AST types.
 
-![PyPI](https://img.shields.io/pypi/v/pydantic-ast?logo=python&logoColor=%23cccccc)
+[![PyPI](https://img.shields.io/pypi/v/pydantic-ast?logo=python&logoColor=%23cccccc)](https://pypi.org/project/pydantic-ast)
 [![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/lmmx/pydantic_ast/master.svg)](https://results.pre-commit.ci/latest/github/lmmx/pydantic_ast/master)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/pydantic-ast.svg)](https://pypi.org/project/pydantic_ast)

@@ -1,11 +1,10 @@
 from __future__ import annotations
 
-from typing import FrozenSet, Literal, Union
+from typing import Literal, Union
 
 from ._base import ASTNode
 
 __all__ = [
-    "ConstantValue",
     "Constant",
     "FormattedValue",
     "JoinedStr",
@@ -15,13 +14,12 @@ __all__ = [
     "Dict",
 ]
 
-ConstantValue = Union[int, float, str, None]
+Const = Union[int, float, str, None]
+ConstU = Union[Const, tuple[Const], frozenset[Const]]
 
 
 class Constant(ASTNode):
-    value: Literal[...] | ConstantValue | tuple[ConstantValue] | FrozenSet[
-        ConstantValue
-    ]
+    value: Literal[...] | ConstU  # type: ignore[valid-type]
 
 
 class FormattedValue(ASTNode):

@@ -71,16 +71,7 @@ from ._function_and_classdefs import (
     arg,
     arguments,
 )
-from ._literals import (
-    ConstantValue,
-    Constant,
-    Dict,
-    FormattedValue,
-    JoinedStr,
-    List,
-    Set,
-    Tuple,
-)
+from ._literals import Constant, Dict, FormattedValue, JoinedStr, List, Set, Tuple
 from ._pattern_matching import (
     Match,
     MatchAs,
