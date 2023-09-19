@@ -1,3 +1,4 @@
+import argparse
 import sys
 from pathlib import Path
 
@@ -10,12 +11,23 @@ class CLIParser(BaseModel):
     source: Path | None
 
     def read(self) -> str:
-        return sys.stdin.read() if self.source is None else self.source.read_text()
+        if self.source is not None:
+            return self.source.read_text()
+        elif not sys.stdin.isatty():
+            return sys.stdin.read()
+        else:
+            # Handle the case where there's no input (either file or pipe)
+            raise ValueError("No input provided.")
 
 
-# def read_command_line(source: str | None = None) -> None:
-def read_command_line(source: str | None = None) -> None:
-    input_text = CLIParser(source=source).read()
+def read_command_line():
+    parser = argparse.ArgumentParser(description="Process some input.")
+    parser.add_argument("source", nargs="?", type=Path, help="a source file to process")
+    args = parser.parse_args()
+    try:
+        input_text = CLIParser(source=args.source).read()
+    except ValueError as exc:
+        sys.exit(f"Error: {exc}")
     result = pydantic_ast.parse(input_text)
     print(result)
     return
