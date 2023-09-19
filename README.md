@@ -26,7 +26,7 @@ Use it as a drop-in replacement to `ast.parse` with a more readable representati
 >>> ast.parse(source)
 <ast.Module object at 0x7fef82567610>
 >>> pydantic_ast.parse(source)
-pydantic-ast: body=[Assign(targets=[Name(id='x', ctx=Store())], value=Constant(value=1), type_comment=None)] type_ignores=[]
+body=[Assign(targets=[Name(id='x', ctx=Store())], value=Constant(value=1), type_comment=None)] type_ignores=[]
 ```
 
 Use it on the command line to quickly get an AST of a Python program or a section of one
