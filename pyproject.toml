@@ -26,6 +26,9 @@ requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 
+[project.scripts]
+pydantic-ast = "pydantic_ast.cli:read_command_line"
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"

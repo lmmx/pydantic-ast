@@ -17,8 +17,8 @@ __all__ = [
 
 
 class match_case(ASTNode):
-    pattern: list[ASTNode]
-    guard: ASTNode
+    pattern: ASTNode
+    guard: ASTNode | None
     body: list[ASTNode]
 
 
@@ -52,12 +52,12 @@ class MatchMapping(ASTNode):
 class MatchClass(ASTNode):
     cls: ASTNode
     patterns: list[ASTNode]
-    kwd_attrs: list[ASTNode]
+    kwd_attrs: list[str]
     kwd_patterns: list[ASTNode]
 
 
 class MatchAs(ASTNode):
-    pattern: ASTNode
+    pattern: ASTNode | None
     name: str | None
 
 

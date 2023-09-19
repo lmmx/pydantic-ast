@@ -72,8 +72,8 @@ from ._function_and_classdefs import (
     arguments,
 )
 from ._literals import (
-    Constant,
     ConstantValue,
+    Constant,
     Dict,
     FormattedValue,
     JoinedStr,

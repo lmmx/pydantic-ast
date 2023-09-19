@@ -34,7 +34,7 @@ class AugAssign(ASTNode):
 
 class Raise(ASTNode):
     exc: ASTNode
-    cause: ASTNode
+    cause: ASTNode | None
 
 
 class Assert(ASTNode):
