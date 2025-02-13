@@ -32,7 +32,7 @@ body=[Assign(targets=[Name(id='x', ctx=Store())], value=Constant(value=1), type_
 Use it on the command line to quickly get an AST of a Python program or a section of one
 
 ```sh
-echo '"Hello world"' | pydantic-ast 
+echo '"Hello world"' | pydantic-ast
 ```
 ⇣
 ```
