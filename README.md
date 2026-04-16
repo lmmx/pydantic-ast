@@ -2,10 +2,12 @@
 
 Pydantic models covering Python AST types.
 
-[![PyPI](https://img.shields.io/pypi/v/pydantic-ast?logo=python&logoColor=%23cccccc)](https://pypi.org/project/pydantic-ast)
-[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/lmmx/pydantic_ast/master.svg)](https://results.pre-commit.ci/latest/github/lmmx/pydantic_ast/master)
-[![Supported Python versions](https://img.shields.io/pypi/pyversions/pydantic-ast.svg)](https://pypi.org/project/pydantic_ast)
+<!-- [![downloads](https://static.pepy.tech/badge/pydantic-ast/month)](https://pepy.tech/project/pydantic-ast) -->
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![PyPI](https://img.shields.io/pypi/v/pydantic-ast.svg)](https://pypi.org/project/pydantic-ast)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/pydantic-ast.svg)](https://pypi.org/project/pydantic-ast)
+[![License](https://img.shields.io/pypi/l/pydantic-ast.svg)](https://pypi.python.org/pypi/pydantic-ast)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/lmmx/pydantic-ast/master.svg)](https://results.pre-commit.ci/latest/github/lmmx/pydantic-ast/master)
 
 <!-- [![build status](https://github.com/lmmx/pydantic_ast/actions/workflows/master.yml/badge.svg)](https://github.com/lmmx/pydantic_ast/actions/workflows/master.yml) -->
 
