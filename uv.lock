@@ -3,7 +3,7 @@ revision = 3
 requires-python = ">=3.10"
 
 [options]
-exclude-newer = "2026-04-13T14:36:35.366865659Z"
+exclude-newer = "2026-04-13T14:38:48.753066938Z"
 exclude-newer-span = "P3D"
 
 [[package]]
@@ -176,7 +176,7 @@ wheels = [
 
 [[package]]
 name = "pydantic-ast"
-version = "0.2.0"
+version = "0.2.1"
 source = { editable = "." }
 dependencies = [
     { name = "pydantic" },

@@ -12,7 +12,7 @@ test = [
 
 [project]
 name = "pydantic-ast"
-version = "0.2.0"
+version = "0.2.1"
 description = "Pydantic models covering Python AST types"
 authors = [
   {name = "Louis Maddox", email = "louismmx@gmail.com"}
