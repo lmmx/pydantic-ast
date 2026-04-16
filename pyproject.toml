@@ -2,6 +2,14 @@
 build-backend = "uv_build"
 requires = ["uv_build>=0.11.6,<0.12"]
 
+[dependency-groups]
+dev = [
+  "pdbpp>=0.12.1"
+]
+test = [
+  "pytest>=8"
+]
+
 [project]
 name = "pydantic-ast"
 version = "0.2.0"
@@ -46,14 +54,6 @@ known_first_party = ["pydantic_ast"]
 
 [tool.pdm]
 version = {source = "file", path = "src/pydantic_ast/__init__.py"}
-
-[dependency-groups]
-dev = [
-    "pdbpp>=0.12.1",
-]
-test = [
-  "pytest>=8",
-]
 
 [tool.ruff]
 extend-ignore = ["F401", "F403"]
