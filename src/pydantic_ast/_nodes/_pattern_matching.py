@@ -4,15 +4,15 @@ from ._base import ASTNode
 
 __all__ = [
     "Match",
-    "match_case",
-    "MatchValue",
-    "MatchSingleton",
-    "MatchSequence",
-    "MatchStar",
-    "MatchMapping",
-    "MatchClass",
     "MatchAs",
+    "MatchClass",
+    "MatchMapping",
     "MatchOr",
+    "MatchSequence",
+    "MatchSingleton",
+    "MatchStar",
+    "MatchValue",
+    "match_case",
 ]
 
 

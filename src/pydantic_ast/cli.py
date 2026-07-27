@@ -30,4 +30,3 @@ def read_command_line():
         sys.exit(f"Error: {exc}")
     result = pydantic_ast.parse(input_text)
     print(result)
-    return

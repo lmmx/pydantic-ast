@@ -6,12 +6,12 @@ from ._base import ASTNode
 
 __all__ = [
     "Constant",
+    "Dict",
     "FormattedValue",
     "JoinedStr",
     "List",
-    "Tuple",
     "Set",
-    "Dict",
+    "Tuple",
 ]
 
 Const = Union[int, float, str, None]

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from ._base import ASTNode
 
-__all__ = ["AST", "Module", "Expression", "Interactive", "FunctionType"]
+__all__ = ["AST", "Expression", "FunctionType", "Interactive", "Module"]
 
 
 class AST(ASTNode):
