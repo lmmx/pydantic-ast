@@ -4,16 +4,16 @@ from ._base import ASTNode
 from ._expr.core import keyword
 
 __all__ = [
+    "ClassDef",
     "FunctionDef",
+    "Global",
     "Lambda",
-    "arguments",
-    "arg",
+    "Nonlocal",
     "Return",
     "Yield",
     "YieldFrom",
-    "Global",
-    "Nonlocal",
-    "ClassDef",
+    "arg",
+    "arguments",
 ]
 
 

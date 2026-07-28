@@ -5,7 +5,7 @@ from ._base import ASTNode
 # from typing import Union
 
 
-__all__ = ["Load", "Store", "Del", "Name", "Starred"]
+__all__ = ["Del", "Load", "Name", "Starred", "Store"]
 
 
 class Load(ASTNode):

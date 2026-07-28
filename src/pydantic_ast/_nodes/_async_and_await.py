@@ -4,7 +4,7 @@ from ._base import ASTNode
 from ._control_flow import withitem
 from ._function_and_classdefs import arguments
 
-__all__ = ["AsyncFunctionDef", "Await", "AsyncFor", "AsyncWith"]
+__all__ = ["AsyncFor", "AsyncFunctionDef", "AsyncWith", "Await"]
 
 
 class AsyncFunctionDef(ASTNode):
